@@ -1,30 +1,24 @@
-var toggle=document.getElementById('themeToggle');
-let curtheme=localStorage.getItem("theme")
+const toggle = document.getElementById('themeToggle');
 
-
-if(curtheme=="dark"){
-	setDarkTheme();
+function setDarkTheme() {
+  document.body.className = 'dark-theme';
+  toggle.src = 'assets/sun.png';
+  localStorage.theme = 'dark';
+}
+function setLightTheme() {
+  document.body.className = 'light-theme';
+  toggle.src = 'assets/moon.png';
+  localStorage.theme = 'light';
 }
 
+function switchTheme() {
+  if (document.body.className === 'dark-theme') setLightTheme();
+  else setDarkTheme();
+}
+const curtheme = localStorage.getItem('theme');
 
-
-function setDarkTheme(){
-	document.body.className='dark-theme';
-	toggle.src="assets/sun.png";
-	localStorage.theme="dark";
+if (curtheme === 'dark') {
+  setDarkTheme();
 }
 
-function setLightTheme(){
-	document.body.className='light-theme';
-	toggle.src="assets/moon.png";
-	localStorage.theme="light";
-}
-
-
-
-toggle.addEventListener('click', function() {
-    if (document.body.className === 'dark-theme')setLightTheme();
-	else  setDarkTheme();
-});
-
-// if (localStorage.theme==="dark")setDarkTheme;
+toggle.addEventListener('click', switchTheme);
