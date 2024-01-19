@@ -1,11 +1,12 @@
 {
-  "name": "package.json",
+  "name": "my-web_lab2",
   "version": "1.0.0",
-  "description": "visit-card",
-  "main": ".eslintrc.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "htmlhint": "^0.15.0"
+  }
 }
