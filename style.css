@@ -49,7 +49,7 @@ body.dark-theme {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.navigation{
+.navigation {
   display: flex;
   height: 30px;
   font-size: 20px;
@@ -57,25 +57,25 @@ body.dark-theme {
   justify-content: space-between;
   border-bottom: solid;
   margin-bottom: 10px;
-  border-bottom-color: #8f8f8f ;
+  border-bottom-color: #8f8f8f;
   color: var(--txt-color);
 }
 
-.nav{
+.nav {
   color: var(--txt-color);
   text-decoration: none;
   align-items: flex-start;
   padding: 0 0 10px;
 }
 
-.proj-link{
+.proj-link {
   text-decoration: none;
   text-align: initial;
   color: var(--txt-color);
 }
 
 
-.nav:visited{
+.nav:visited {
   border-bottom: 1px solid #dadada;
   text-decoration: none;
   color: var(--txt-color);
@@ -200,7 +200,7 @@ body.dark-theme {
 }
 
 
-.proj-name{
+.proj-name {
   display: flex;
   justify-content: center;
   color: var(--txt-color);
