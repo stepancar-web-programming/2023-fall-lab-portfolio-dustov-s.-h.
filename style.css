@@ -13,7 +13,7 @@ body {
 :root {
   --back-color: #f5f5f5;
   --container-color: #fff;
-  --container-shadow: 0px 0px 20px #0000007f;
+  --container-shadow: 0 0 20px #0000007f;
   --txt-color: #1777dd;
 }
 
@@ -27,7 +27,7 @@ body.dark-theme {
   color: #fff;
 
   --container-color: #121212;
-  --container-shadow: 0px 0px 20px #fff;
+  --container-shadow: 0 0 20px #fff;
   --txt-color: #fff;
 }
 
@@ -74,13 +74,11 @@ body.dark-theme {
   color: var(--txt-color);
 }
 
-
 .nav:visited {
   border-bottom: 1px solid #dadada;
   text-decoration: none;
   color: var(--txt-color);
 }
-
 
 .header-subtitle {
   color: #8f8f8f;
@@ -118,8 +116,6 @@ body.dark-theme {
   margin: 0;
 }
 
-
-
 .links-link,
 .links-title {
   font-size: 14px;
@@ -146,14 +142,10 @@ body.dark-theme {
   border-bottom: none;
 }
 
-
-
 .links-title {
   margin: 0;
   min-width: 100px;
 }
-
-
 
 .slider-container {
   position: relative;
@@ -198,7 +190,6 @@ body.dark-theme {
 .next-button {
   right: 10px;
 }
-
 
 .proj-name {
   display: flex;
