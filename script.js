@@ -6,7 +6,7 @@ function setDarkTheme() {
   localStorage.theme = 'dark';
 }
 
-function setLightTheme() {0
+function setLightTheme() {
   document.body.className = 'light-theme';
   toggle.src = 'assets/moon.png';
   localStorage.theme = 'light';
